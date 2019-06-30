@@ -27,7 +27,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const config = require('./config');
+const config = require('./init');
 for(const item of config){
     item(app);
 }

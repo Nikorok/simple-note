@@ -1,4 +1,7 @@
-<%- include('./layout/header.ejs', {title: "Note", user: user})%>
+<%- include('../layout/header.ejs', {title: author, user: user})%>
+
+<h1><%= author %></h1>
+<hr>
 <ol>
     <%for(note of notes){%>
         <li>
@@ -15,9 +18,9 @@
                 <a href="/edit/<%= note.id %>">Edit</a>
                 <a href="/delete/<%= note.id %>">Delete</a>
             <% }else { %>
-                <b>Author: <a href="/author/<%= note.author %>"><%= note.author %></a></b>
+                <b>Author: <%= note.author %></b>
             <% }%>
         </li>
     <%}%>
 </ol>
-<%-include ./layout/footer.ejs%>
+<%-include ../layout/footer.ejs%>

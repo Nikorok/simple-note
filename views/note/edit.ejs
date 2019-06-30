@@ -1,0 +1,15 @@
+<%- include('../layout/header.ejs', {title: "Add note", user: user})%>
+<form action="/edit/<%= note.id %>" method="post">
+    <h1>Edit note</h1>
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" value="<%= note.title %>">
+    <br>
+    <label for="body">Body:</label>
+    <textarea name="body" id="body" cols="30" rows="10"><%= note.body %></textarea>
+    <br>
+    <label for="categories">Categories:</label>
+    <input type="text" name="categories" id="categories" value="<%= note.categories.join(' ') %>">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+<%-include ../layout/footer.ejs%>

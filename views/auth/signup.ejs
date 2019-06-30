@@ -1,0 +1,14 @@
+<%- include('../layout/header.ejs', {title: "Sign up", user: null})%>
+<form action="/signup" method="post">
+    <label for="username">Enter username:</label>
+    <input type="text" name="username" id="username">
+    <br>
+    <label for="password">Enter password: </label>
+    <input type="password" name="password" id="password">
+    <br>
+    <label for="email">Enter email:</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+<%-include ../layout/footer.ejs%>

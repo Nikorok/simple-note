@@ -1,0 +1,40 @@
+{
+  "name": "note",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "gulp": "gulp"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-node": "^9.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "nodemon": "^1.19.0"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "bulma": "^0.7.5",
+    "concurrently": "^4.1.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "express-session": "^1.16.1",
+    "jquery": "^3.4.1",
+    "mongoose": "^5.5.9",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "static-asset": "^0.6.0"
+  }
+}
